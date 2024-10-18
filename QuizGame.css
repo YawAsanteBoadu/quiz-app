@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap');
+
+:root{
+    --primary-gradiant: linear-gradient( 70deg, rgb(188,52,62) 0%, rgb(240,70,81) 100%);
+    --primary-color: rgb(238, 69, 80);
+    --secondary-color: rgb(43, 211, 10);
+    --text-color: rgb(0, 0, 0);
+    --field-color: rgb(255,255,255);
+}
+
+*{
+    box-sizing: border-box;
+    font-family: Old Standard TT, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: var(--text-color);
+}
+
+
+/* main game screen */
+.container{
+    position: relative;
+    display: flex;
+}
+
+.center-container{
+    width: 100%;
+    height: 100%;
+    margin: 20px;
+    justify-content: right;
+    align-items: center;
+    margin-top: 5rem;
+}
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-center{
+    justify-content: center;
+    align-items: center;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.question{
+    margin-bottom: 3rem;
+}
+
+.ans-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: .5rem;
+    width: 50%;
+    font-size: 1.8rem;
+    border: 2px solid var(--secondary-color);
+    background-color: var(--field-color);
+}
+
+.ansChoice{
+    width: 100%;
+}
+
+.correct{
+    background-color: var(--secondary-color);
+}
+
+.incorrect{
+    background-color: red;
+}
+
+/* Heads Up Display*/
+#headsUpDisplay{
+    display: flex;
+    gap: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.prefix{
+    text-align: center;
+    font-size: 2rem;
+}
+

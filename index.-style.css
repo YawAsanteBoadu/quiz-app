@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap');
+
+:root{
+    --primary-gradiant: linear-gradient( 70deg, rgb(188,52,62) 0%, rgb(240,70,81) 100%);
+    --primary-color: rgb(238, 69, 80);
+    --secondary-color: rgb(43, 211, 10);
+    --text-color: rgb(0, 0, 0);
+    --field-color: rgb(255,255,255);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Old Standard TT, sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--field-color);
+}
+
+.container{
+    position: relative;
+    width: 100%;
+    /* height: 900px; */
+    max-width: 460px;
+    background: var(--primary-color);
+    padding: 30px;
+    overflow: hidden;
+    border-radius: 10px;
+    color: whitesmoke;
+    /* text-align: center; */
+}
+
+.heading{
+    text-align: center;
+    font-size: 45px;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+label{
+    display: block;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+select{
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 18;
+}
+
+.btn{
+    appearance: none;
+    background-color: #FCFCFD;
+    border-radius: 4px;
+    border-width: 0;
+    box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: var(--primary-color);
+    cursor: pointer;
+    display: inline-flex;
+    font-family:  Old Standard TT, monospace;
+    height: 48px;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding-left: 16px;
+    padding-right: 16px;
+    text-align: left;
+    text-decoration: none;
+    transition: box-shadow .15s,transform .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow,transform;
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+.btn{
+    width: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 25%;
+    margin-top: 20px;
+}
+
+a.btn:focus{
+    box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+}
+
+a.btn:hover{
+    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+    transform: translateY(-2px);
+}
+
+a.btn:active{
+    box-shadow: #D6D6E7 0 3px 7px inset;
+    transform: translateY(2px);
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input {
+    margin: 1rem;
+    width: 15rem;
+    padding: 1rem;
+    font-size: 1.5rem;
+    border: none;
+    box-shadow: 0 0.14rem 0.14rem 0 hsl(0, 0%, 96%);
+}
+
+input::placeholder{
+    color: var(--text-color);
+}
+
+.score-board {
+    text-align: center;
+}
+
+button.btn {
+    margin-left: -3px;
+}
