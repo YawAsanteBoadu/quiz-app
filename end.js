@@ -4,11 +4,9 @@ const finalScore = document.getElementById('finalScore');
 
 // retrieve score from localStorage and display on end page// 
 const mostRecentScores = localStorage.getItem('mostRecentScores');
-
 finalScore.innerText = `Score: ${mostRecentScores}`;
-
 const highScores = JSON.parse(localStorage.getItem('highScores')) || [];
-console.log(highScores)
+
 
 const MAX_HIGH_SCORE = 5;
 
@@ -17,7 +15,6 @@ username.addEventListener('keyup', () => {
 })
 // save high score//
 saveHighScore = ((e) => {
-    console.log('save button works');
     e.preventDefault();
 
     const scores = {
@@ -27,10 +24,11 @@ saveHighScore = ((e) => {
 
     highScores.push(scores);  // pushing the scores object into the array highscores//
     
-    highScores.sort((a,b) => a.score - b.score) // find out the difference in arranging the par for sorting 
+    highScores.sort((a,b) => b.score - a.score) // to arrange the highscore value in descending order// 
     highScores.splice(MAX_HIGH_SCORE);
 
-    console.log(highScores)
+    localStorage.setItem('highScores', JSON.stringify(highScores));
+    // window.location.assign('/')  // find out the logic behind a single slah, which takes you back to the index page//
 
 })
 
