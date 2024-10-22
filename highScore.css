@@ -1,0 +1,19 @@
+#highScoresList{
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 4rem;
+    text-transform: uppercase;
+}
+
+.dsiplay-highScore{
+    font-size: 1.3rem;
+    margin-bottom: 12px;
+    border: 1.5px solid rgb(238, 205, 255);
+    border-radius: 5px;
+    padding-left: 10px;
+}
+
+.dsiplay-highScore:hover{
+    transform: scale(1.05);
+    overflow: hidden;
+}
