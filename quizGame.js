@@ -75,7 +75,7 @@ getNewQuestion = () => {
         
         window.location.assign("/end.html")
 
-        1
+    
     }
     questionCounter++;
     questionCounterText.innerHTML = `${questionCounter}/${MAX_QUES}`
