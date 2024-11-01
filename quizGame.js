@@ -51,6 +51,16 @@ let questionsArray = [
 const CORRECT_BONUS = 10;
 const MAX_QUES = 5;
 
+// function to show pre-loader//
+const showPreLoader = () => {
+    overlay.style.display = 'block'
+}
+
+// function to hide pre-loader when called//
+const hidePreLoader = () =>{
+    overlay.style.display = 'none'
+}
+
 startGame = () => {
     questionCounter = 0; 
     score = 0;
@@ -65,7 +75,7 @@ getNewQuestion = () => {
         
         window.location.assign("/end.html")
 
-        
+        1
     }
     questionCounter++;
     questionCounterText.innerHTML = `${questionCounter}/${MAX_QUES}`
